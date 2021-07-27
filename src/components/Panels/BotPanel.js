@@ -23,11 +23,13 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
+        padding: '0rem 0.5rem'
     },
     infoArea: {
+        // border: 'solid red 1px',
         display: 'flex',
         flexDirection: 'column',
-        padding: '1.0rem 1.0rem 2.0rem',
+        padding: '1rem 0rem 2rem',
     },
     controls: {
         // border: 'solid green 1px',
@@ -59,7 +61,7 @@ export default function BotPanel(props) {
     return (
         <Container maxWidth='sm' className={classes.panel} >
             <Box className={classes.infoArea} >
-                <Box display="flex" justifyContent="center" color="textPrimary" >
+                <Box display="flex" justifyContent="center" color="textPrimary"  >
                     <GameNumber 
                         gameNumber={props.gameNumber}
                     />&nbsp;&nbsp;&nbsp;
