@@ -61,6 +61,7 @@ export default function HumanPanel(props) {
             <Box className={classes.infoArea} >
                 <Box display="flex" justifyContent="center" color="textPrimary" >
                     <GameNumber
+                        status={props.status}
                         gameNumber={props.gameNumber}
                     />&nbsp;&nbsp;&nbsp;
                     <StatusHeader
