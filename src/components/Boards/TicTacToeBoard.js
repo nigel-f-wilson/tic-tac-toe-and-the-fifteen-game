@@ -40,8 +40,6 @@ export default function Board(props) {
     const classes = useStyles();    
     const boardNumbers = [2,9,4,7,5,3,6,1,8]
     let moveList = props.moveList
-    let gameStatus = status(moveList)
-
 
     let boardIcons = getBoardIcons(moveList)
     let boardColors = getBoardColors(moveList)

@@ -172,26 +172,25 @@ export default function WelcomePage() {
 // Just like a musician expresses their creativity in a song, a mathematician expresses their creativity in a
 // logical argument.As with songs, there are proofs that are considered classic, there are those that are seen as
 //     modern innovations on the classics, and others that are competely novel.
-
-{/* <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-    Defining Your Terms
-</Typography>
-<Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-    In this lesson we will use certain words that we have and intuitive grasp on: mistake, threat, double-attack. We need to go beyond our intuitive 
-    understanding of these words and define them in a precice way. I leave writing and refining these definitions as an exercise for the student. 
-    Keep in mind, a good definition is an "if and only if" statement, it outlines the conditions which are both necessary and sufficient. 
-</Typography>
-<Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-    Proof on Paper
-</Typography>
-<Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-    It may take you several pages, but you can prove using an exhaustive tree-diagram that in classic Tic-Tac-Toe both players worst case scenario
-    if they avoid making any mistakes is a draw. If you get stuck or want to check your answers, take a look at the "Learn Tic Tac Toe Strategy" page.
-</Typography>
-<Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-    Taking It Further
-</Typography>
-<Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-    Is it possible for the player who goes first to make a mistake on the first move of the game? 
-    Is is possible for the player who goes second to make a mistake on their first move?
-</Typography> */}
+// <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+//     Defining Your Terms
+// </Typography>
+// <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+//     In this lesson we will use certain words that we have and intuitive grasp on: mistake, threat, double-attack. We need to go beyond our intuitive 
+//     understanding of these words and define them in a precice way. I leave writing and refining these definitions as an exercise for the student. 
+//     Keep in mind, a good definition is an "if and only if" statement, it outlines the conditions which are both necessary and sufficient. 
+// </Typography>
+// <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+//     Proof on Paper
+// </Typography>
+// <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+//     It may take you several pages, but you can prove using an exhaustive tree-diagram that in classic Tic-Tac-Toe both players worst case scenario
+//     if they avoid making any mistakes is a draw. If you get stuck or want to check your answers, take a look at the "Learn Tic Tac Toe Strategy" page.
+// </Typography>
+// <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+//     Taking It Further
+// </Typography>
+// <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+//     Is it possible for the player who goes first to make a mistake on the first move of the game? 
+//     Is is possible for the player who goes second to make a mistake on their first move?
+// </Typography> 

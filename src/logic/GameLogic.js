@@ -101,9 +101,9 @@ export function oHasWon(ml) {
 export function gameDrawn(ml) {
     return (ml.length === 9 && !gameHasBeenWon(ml))
 }
-function gameWillBeDrawn(ml) {
-    // TODO
-}
+// function gameWillBeDrawn(ml) {
+//     // TODO
+// }
 export function moveNumber(ml) {
     return (ml.length + 1)
 }
@@ -193,9 +193,9 @@ export function oNumbers(ml) {
 export function moveListStringToArray(ml) {               // "123" --> [1,2,3]
     return Array.from(ml).map(e => Number(e))
 }
-function moveListArrayToString(mla) {               // [1,2,3] --> "123"
-    return mla.toString().replaceAll(",", "")
-}
+// function moveListArrayToString(mla) {               // [1,2,3] --> "123"
+//     return mla.toString().replaceAll(",", "")
+// }
 
 
 
@@ -264,15 +264,15 @@ export function sumsOfTwo(moveSet) {
 
 
 
-function factorial(num) {
-    console.assert(num >= 0 && num <=9, `Factorial called with a number out of this game's range!`)
-    let product = 1
-    for (let i = 1; i <= num; i++) {
-        product = product * i
-    }
-    return product
-    // This led to a fun research rabbit hole about how to more efficiently compute factorials using Paschals Triangle
-}
+// function factorial(num) {
+//     console.assert(num >= 0 && num <=9, `Factorial called with a number out of this game's range!`)
+//     let product = 1
+//     for (let i = 1; i <= num; i++) {
+//         product = product * i
+//     }
+//     return product
+//     // This led to a fun research rabbit hole about how to more efficiently compute factorials using Paschals Triangle
+// }
 
 // function inEfficientUnclaimedNumbers(ml) {
 //     let unclaimedNumbers = [];

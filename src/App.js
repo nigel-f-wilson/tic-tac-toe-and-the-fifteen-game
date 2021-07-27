@@ -1,16 +1,13 @@
 import React from 'react'
 import {
     HashRouter as Router,
-    Link as RouterLink,
     Route,
     Switch
 } from "react-router-dom"
 
-import logo from './logo.svg'
 import './styles/App.css'
 
 // My Components & Pages
-import Navbar from './components/Navbar/Navbar'
 import WelcomePage from "./pages/WelcomePage"
 
 // PLAY MODES
@@ -24,7 +21,6 @@ import PlayWithCoach from './pages/PlayWithCoach'
 // MUI  components
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Box from '@material-ui/core/Box'
-import Container from '@material-ui/core/Container'
 
 // THEMING
 import theme from "./theme"
@@ -62,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App() {
     const classes = useStyles();
-    const [pageTitle, setPageTitle] = React.useState("Welcome");
   
     return (
         <React.Fragment>

@@ -2,14 +2,13 @@ import React from 'react';
 
 // My Logical Components
 import {
-    status,
     numbersInWin,
     moveListStringToArray
 } from "../../logic/GameLogic";
-import {
-    highlightWins,
-    getBoardHints,
-} from "../../logic/BoardLogic";
+// import {
+//     highlightWins,
+//     getBoardHints,
+// } from "../../logic/BoardLogic";
 
 // My Components
 // import NumCard from "./NumCard";
@@ -73,33 +72,7 @@ export default function FifteenBoard(props) {
     const classes = useStyles();
 
     let ml = props.moveList
-    let gameStatus = status(ml)
-
-    
-
-
-    function getBoardColors(ml) {      // In the 15-Game Color indicates claimed by who, there is no show hints feature. 
-        let data = Array(10).fill('_'); 
-        let mla = moveListStringToArray(ml)
-        mla.forEach((num, turn) => {
-            data[num] = (turn % 2 === 0) ? 'x' : 'o'
-        })
-        return data
-    }
-
-    function getBoardColors(mls) {
-        if (gameStatus === "xWins" || gameStatus === "oWins") {
-            return highlightWins(mls)
-        }
-        else if (props.showHints === true) {
-            return getBoardHints(mls)
-        }
-        else {
-            return Array(10).fill('noColor')
-        }
-    }
-
-    
+    // let gameStatus = status(ml) 
     
 
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]

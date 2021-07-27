@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { nextPlayer } from "../../../logic/GameLogic";
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 // MY COMPONENTS
 import MobileMenu from "./MobileMenu";
-import SpacerBox from "./SpacerBox";
+// import SpacerBox from "./SpacerBox";
 
 // Image Imports
 import logo from "../../images/nsgLogoSnipped.png";
@@ -11,13 +11,10 @@ import logo from "../../images/nsgLogoSnipped.png";
 // MATERIAL-UI COMPONENTS
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Grid from "@material-ui/core/Grid";
 import Typography from '@material-ui/core/Typography';
-import AppBar from '@material-ui/core/AppBar';
 
 
 import { makeStyles } from '@material-ui/core/styles';
-
 
 // const heightInRem = 3.6;
 // const height = `${heightInRem}rem`;

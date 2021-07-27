@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // My Logical Components
 // import positionToOutcomeMap from "../pages/positionToOutcomeMap";
-import { status, gameOver, xNumbers, oNumbers, nextPlayer, availableNumbers } from "../logic/GameLogic";
+import { status, gameOver, nextPlayer, availableNumbers } from "../logic/GameLogic";
 import { selectMoveRandomly, winningMoves, urgentDefensiveMoves, sortBotMoves } from "../logic/BotLogic";
 
 // My React Components
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 export default function PlayVsBot(props) {
     const classes = useStyles();
 
-    const xGoesFirst = true  // X always goes first
+    // const xGoesFirst = true  // X always goes first
     let [humanGoesFirst, setHumanGoesFirst] = useState(true);
     
     let startingPosition = ""  // vs []
@@ -101,12 +101,7 @@ export default function PlayVsBot(props) {
         </Box>
     )
 
-    function humansNumbers(mls) {  
-        return (humanGoesFirst) ? xNumbers(mls) : oNumbers(mls)
-    }
-    function botsNumbers(mls) {  
-        return (humanGoesFirst) ? oNumbers(mls) : xNumbers(mls)
-    }
+    
     function humanGoesNext(mls) {  
         if (humanGoesFirst) {
             return (nextPlayer(mls) === "xNext")

@@ -1,7 +1,7 @@
 // X always goes first! X and O will be shorthand for the player who goes First and the player who goes second.
 // PlayerOne and PlayerTwo are NOT markers of who goes first or second in any given game!
 // In the 15 game, PlayerOne and PlayerTWo are distinguished by dark-blue and light-blue
-import { outcomeMap, sumsOfTwo, complementOf, intersect, gameOver, xHasWon, oHasWon, gameDrawn, xNumbers, oNumbers, nextPlayer, availableNumbers } from "./GameLogic";
+import { outcomeMap, sumsOfTwo, complementOf, intersect, gameOver, xNumbers, oNumbers, nextPlayer, availableNumbers } from "./GameLogic";
 
 
 
@@ -97,9 +97,9 @@ export function sortBotMoves(ml, humanPlaysX) {
 ////////////////////////////////////////////////////////////////
 // Isolate each players' claimed numbers: ARRAY(NUM)
 ////////////////////////////////////////////////////////////////
-function botsNumbers(ml, humanPlaysX) {  // Always the Human
-    return (humanPlaysX) ? oNumbers(ml) : xNumbers(ml)
-}
+// function botsNumbers(ml, humanPlaysX) {  // Always the Human
+//     return (humanPlaysX) ? oNumbers(ml) : xNumbers(ml)
+// }
 
 
 // Randomly selects a move from a list of possible next moves.

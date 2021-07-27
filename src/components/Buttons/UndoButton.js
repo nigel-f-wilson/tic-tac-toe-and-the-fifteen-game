@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { getParent, gameOver, moveNumber } from "../../logic/GameLogic";
+import { moveNumber } from "../../logic/GameLogic";
 
 
 // MUI Components

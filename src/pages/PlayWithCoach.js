@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PlayWithCoach(props) {
     const classes = useStyles();
-    const xGoesFirst = true  // X always goes first in Play with Coach Mode
+    // const xGoesFirst = true  // X always goes first in Play with Coach Mode
 
     let startingPosition = ""  // vs []
     let [moveList, setmoveList] = useState(startingPosition);

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 // My Logical Components
 import {
     status,
@@ -8,13 +7,6 @@ import {
     xHasWon, 
     oHasWon, 
     gameDrawn,
-    xNumbers,
-    oNumbers,
-    trioList,
-    outcomeMap,
-    intersect,
-    availableNumbers,
-    moveListStringToArray
 } from "../logic/GameLogic";
 
 // My React  Components
