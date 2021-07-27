@@ -83,6 +83,9 @@ export function status(ml) {
 export function nextPlayer(ml) {
     return (ml.length % 2 === 0) ? "xNext" : "oNext"
 }
+export function gameOverUsingStatus(status) {
+    return (status === "xWins" || status === "oWins" || status === "draw")
+}
 export function gameOver(ml) {
     return (ml.length === 9 || gameHasBeenWon(ml)) ? true : false
 }
