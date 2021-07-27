@@ -50,6 +50,15 @@ export default function CoachPanel(props) {
         if (mls.length === 0) {
             label = "newGame"
         }
+        else if (currentStatus === "xWins") {
+            label = "xWins"
+        }
+        else if (currentStatus === "oWins") {
+            label = "oWins"
+        }
+        else if (currentStatus === "draw") {
+            label = "draw"
+        }
         else if (mls.length === 1) {
             if (mls.charAt(0) === "5") {
                 label = "centerOpening"
@@ -72,15 +81,6 @@ export default function CoachPanel(props) {
         }
         else if (doubleAttackingMoves(mls).length > 0) {
             label = "doubleAttack"
-        }
-        else if (currentStatus === "xWins") {
-            label = "xWins"
-        }
-        else if (currentStatus === "oWins") {
-            label = "oWins"
-        }
-        else if (currentStatus === "draw") {
-            label = "draw"
         }
         else if (previousOutcome === "draw" && currentOutcome === "draw") {
             label = "sound"
