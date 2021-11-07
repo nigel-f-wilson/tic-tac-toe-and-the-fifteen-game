@@ -103,7 +103,7 @@ export default function FifteenRulesPage() {
                 <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
                     All of mathematics is based on Proofs: Written logical arguments that leave no room for doubt.  
                     The art of writing proofs is often introduced in a needlessly confusing way in school. 
-                    It is usually mixed into a lesson that also introduces lots of new technical jargon deaing with similar and congruent triangles.
+                    It is usually mixed into a geometry lesson that also introduces lots of new technical jargon deaing with similar and congruent triangles.
                     I think that kids should be introduced to the art of writing thorough and persuasive mathematical arguments 
                     in a context that is more familiar to them so that the beauty of what a proof is doesn't get lost in a pile of new vocabulary words.
                 </Typography>
