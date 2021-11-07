@@ -95,6 +95,20 @@ export default function FifteenRulesPage() {
                     At a higher level, this game can serve as a gateway to combinatorial thinking: How many winning three-card sets are there?
                 </Typography>
 
+
+                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+                    The Fifteen Game: Similarity Beneath the Surface
+                </Typography>
+                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    Many problems can be solved with less work if, instead of starting from scratch, you look for similarities between the problem
+                    at hand and other problems that have already been solved.
+                    Two real-world problems may seem unrelated at first even though at a deeper level they are behaving according to the same
+                    underlying patterns. Being familiar with mathematics makes you better at noticing when this is the case!
+                    Experience this for yourself by playing the two game featured here.
+                    Though the two games feel nothing alike when you first play them, the Fifteen Game is startegically identical to Tic-Tac-Toe.
+                    If you have mastered Tic-Tac-Toe but still find yourself losing to my bot ath the Fifteen Game then I suggest looking into "Magic Squares".
+                </Typography>
+
                 <Grid container>
                     <Grid item xs={12} sm={4} >
                         <Button
