@@ -48,68 +48,30 @@ export default function FifteenRulesPage() {
 
 
                 <Typography align='center' color='textPrimary' component='h1' variant='h2' gutterBottom >
-                    How to Play the Fifteen Game
-                </Typography>
-                
-                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-                    Setup and Play
-                </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    The Fifteen Game can be played with cards numbered one through nine, or with paper and pencil. 
-                    Two players take turns claiming one card per turn, either by picking up the card or by circling the number
-                    with thier color if playing with paper and pencil. 
+                    The Fifteen Game
                 </Typography>
                 <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-                    Winning
+                    Rules of Play
                 </Typography>
                 <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    The first player to collect a set of three cards that add up to exactly fifteen wins. It is possible to get a total 
-                    of 15 with two, four, or five cards but none of these count as a win. Going over 15 also does not win the game. 
-                    If you collect extra cards you may simply ignore them when looking for sets of threee that win. If all nine cards are
-                    claimed and neither player has managed to get a three-card set that adds up to 15 then the game ends in a draw.
+                    The Fifteen Game is traditionally played with a set of cards numbered one through nine, but can easily be adapted into 
+                    a paper and pencil game. Two players take turns claiming one card per turn. 
+                    The first player to collect a set of exactly three cards that add up to exactly fifteen wins. 
+                    If you collect more than three cards you may ignore any extras when looking at subsets of three.
+                    If all nine cards are claimed and neither player has made a three-card set that sums to 15 then the game ends a draw.
                 </Typography>
                 <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
                     Examples
                 </Typography>
                 <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    It is possible to collect two cards that add up up to 15, for example 6 and 9, or 7 and 8 but these two-card 
-                    combinations do not win the game. Similarly, a four card set such as 1-2-3-9, does not win the game even though
-                    it adds up to 15. The three card set 6-7-8 does not win because it exceeds 15 and the goal of the game is to 
-                    reach exactly 15. Examples of winning sets: 1-5-9, 2-6-7, 3-4-8. Any of these winning combinations would still count 
-                    if the player had additional cards not listed. 
+                    It is possible to get a sum of 15 with two, four, or five cards but these combinations do not count as wins.
+                    For example taking only the 6 and 9 does not win the game because it is only a two-card set. 
+                    Similarly taking the 1, 3, 4, and 7 does not win the game because it is a four-card set.
+                    Three-card sets that exceed 15 (ie. 6, 7, 8) do not win either. <br/>
+                    The two sets 1, 5, 9 and 2, 6, 7 would be winning, even if the player held additional cards not listed. <br/>
+                    Bonus Questions: How many different three card combinations are there? How many of them sum to 15?
                 </Typography>
-
-                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-                    Using the Fifteen Game in Math Class
-                </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    The Fifteen Game is a fantastic way to help young students build fluency with foundation addition facts. 
-                    Though the math required to play is simple enough to be accessible to young children, the game can still provide 
-                    a challenge to most adults. Don't believe me? Try and beat my Bot!
-                </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    The Fifteen Game only takes a few minutes to play, making it an ideal brain-break activity. 
-                    You can also set up a tournament bracket and have a whole class championship fit into one day. 
-                </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    At a higher level, this game can serve as a gateway to combinatorial thinking: How many winning three-card sets are there?
-                </Typography>
-
-
-                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
-                    The Fifteen Game: Similarity Beneath the Surface
-                </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    Many problems can be solved with less work if, instead of starting from scratch, you look for similarities between the problem
-                    at hand and other problems that have already been solved.
-                    Two real-world problems may seem unrelated at first even though at a deeper level they are behaving according to the same
-                    underlying patterns. Being familiar with mathematics makes you better at noticing when this is the case!
-                    Experience this for yourself by playing the two game featured here.
-                    Though the two games feel nothing alike when you first play them, the Fifteen Game is startegically identical to Tic-Tac-Toe.
-                    If you have mastered Tic-Tac-Toe but still find yourself losing to my bot ath the Fifteen Game then I suggest looking into "Magic Squares".
-                </Typography>
-
-                <Grid container>
+                <Grid container >
                     <Grid item xs={12} sm={4} >
                         <Button
                             className={classes.button}
@@ -132,10 +94,41 @@ export default function FifteenRulesPage() {
                             Play Human vs. Bot
                         </Button>
                     </Grid>
-                    
+
                 </Grid>
-                    
-                <Box p={5} />
+                <Box p={2} />
+
+
+                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+                    Using the Fifteen Game in a Math Class
+                </Typography>
+                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    The Fifteen Game only takes a few minutes to play, making it an ideal brain-break activity.
+                    You can also set up a bracket and have a class-wide or school-wide championship tournament.
+                </Typography>
+                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    For students at the Elementary level, The Fifteen Game is a fantastic way to build automaticity at 
+                    mentally computing sums and differences. 
+                    Middle School students will learn about combinations, permutations, and symmetry as they build their tree diagrams 
+                    and map out all the possible strategies in Tic Tac Toe.
+                    High Schoolers can learn what it means to write a rigorous proof in a familiar context. 
+                    They can also apply their algebra skills to create a Magic Square from scratch.  
+                </Typography>
+
+                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+                    Seeing the Similarity Beneath the Surface
+                </Typography>
+                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    Many problems can be solved with less work if, instead of starting from scratch, you look for similarities between the problem
+                    at hand and other problems that have already been solved.
+                    Two real-world problems may seem unrelated at first even though they are behaving according to the same
+                    underlying patterns. Being familiar with mathematics makes you better at noticing when this is the case!
+                    Experience this for yourself by playing the two games featured here.
+                    Though they feel nothing alike when you first play them, the Fifteen Game and Tic-Tac-Toe are actually the same game.
+                    In fact, the bot in this app uses the same exact code to select its moves when playing Tic Tac Toe and the Fifteen Game.
+                    The only thing that is different is how these moves are represented visually. 
+                    If you have mastered Tic-Tac-Toe but still find yourself losing to my bot at the Fifteen Game then I suggest looking into "Magic Squares".
+                </Typography>
             </Container>
         </React.Fragment>
     );

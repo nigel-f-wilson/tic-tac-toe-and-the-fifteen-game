@@ -34,7 +34,7 @@ export default function WelcomePage() {
             <AppBar position='sticky' >
                 <Navbar pageTitle={"Welcome"} />
             </AppBar>
-            <Container className={classes.root} maxWidth='md' >
+            <Container maxWidth='md' >
                 <Box p={2} />
                 <Typography align='center' color='textPrimary' component='h1' variant='h3' gutterBottom >
                     A Math Lesson in Disguise
@@ -43,10 +43,8 @@ export default function WelcomePage() {
                     Mathematical thinking has a playful side. 
                     In fact, there are whole branches of study known as "game theory" and "recreational mathematics". 
                     Sadly, this side of mathematics has been excluded from many primary and secondary school curriculums by folks who
-                     are deluded into thinking that we don't have enough time in the school day to teach anything but "essential skills".
-                    The result of this approach is that many people give up on math altogether before they get to "the good part". 
-                    This project seeks to counteract that trend by introducing two of the most important concepts in mathematics through 
-                    two simple strategy games.  One of these games is likely very familiar to you, the other is probably not.  They both have some surprising things to teach us.  
+                     think we don't have enough time in the school day to teach anything but the "fundamentals".
+                    The result of this approach is that many kids give up on learning math before they get to "the good part". 
                </Typography>
                 <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
                     This project seeks to counteract that trend by using two simple strategy games to introduce two of the most important concepts in math.

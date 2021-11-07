@@ -33,7 +33,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: '100%',
+        height: '100vh',
         width: '100vw',
         backgroundColor: theme.palette.common.black,
 
