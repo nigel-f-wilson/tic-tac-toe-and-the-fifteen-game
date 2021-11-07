@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.common.black,
         display: 'flex',
         alignItems: 'center',
-        flex: '1 0 40%',
+        flex: '1 0 30%',
     },
 }));
 
