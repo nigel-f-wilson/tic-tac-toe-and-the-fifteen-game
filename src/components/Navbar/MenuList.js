@@ -12,6 +12,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Icon from '@material-ui/core/Icon';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Divider from '@material-ui/core/Divider';
 
 
 
@@ -59,12 +60,16 @@ export default function MenuList() {
                 />
             </ListItem>
 
+            <Divider />
+
+
             <ListSubheader >
                 <Box p={2} />
-                <Typography variant='h5' color="textPrimary" >
+                <Typography variant='h4' color="textPrimary" gutterBottom  >
                     Tic Tac Toe
                 </Typography>
             </ListSubheader>
+
 
             <ListItem
                 key={'rule'}
@@ -78,7 +83,7 @@ export default function MenuList() {
                     classes={{ root: classes.icon }}
                 />
                 <ListItemText
-                    primary={'Rules of the Game'}
+                    primary={'How To Play'}
                     primaryTypographyProps={{ variant: 'h5' }}
                 />
             </ListItem>
@@ -125,7 +130,7 @@ export default function MenuList() {
                     pathname: '/play_with_coach',
                 }}
             >
-                <Icon className={"fas fa-question fa-2x"}
+                <Icon className={"fas fa-graduation-cap fa-2x"}
                     classes={{ root: classes.icon }}
                 />
                 <ListItemText
@@ -135,9 +140,12 @@ export default function MenuList() {
             </ListItem>
 
 
+            <Divider />
+
+
             <ListSubheader  >
                 <Box p={2} />
-                <Typography variant='h5' color="textPrimary" >
+                <Typography variant='h4' color="textPrimary" gutterBottom >
                     The Fifteen Game
                 </Typography>
             </ListSubheader>
@@ -154,7 +162,7 @@ export default function MenuList() {
                     classes={{ root: classes.icon }}
                 />
                 <ListItemText
-                    primary={'Rules of the Game'}
+                    primary={'How To Play'}
                     primaryTypographyProps={{ variant: 'h5' }}
                 />
             </ListItem>
@@ -201,11 +209,11 @@ export default function MenuList() {
                     pathname: '/learn_about_magic_squares',
                 }}
             >
-                <Icon className={"fas fa-question fa-2x"}
+                <Icon className={"fas fa-graduation-cap fa-2x"}
                     classes={{ root: classes.icon }}
                 />
                 <ListItemText
-                    primary={'Learn About Magic Squares'}
+                    primary={'Magic Squares'}
                     primaryTypographyProps={{ variant: 'h5' }}
                 />
             </ListItem>
