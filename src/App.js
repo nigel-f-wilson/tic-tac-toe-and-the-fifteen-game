@@ -60,46 +60,32 @@ export default function App() {
                     <Router>
                         <Switch>
                             <Route exact path="/">
-                                {/* <Navbar pageTitle={"Welcome"} /> */}
                                 <WelcomePage />
                             </Route>
-
                             <Route path="/tic_tac_toe_rules">
                                 <TicTacToeRules />
                             </Route>
-
                             <Route path="/fifteen_rules">
                                 <FifteenRules />
                             </Route>
-
                             <Route path="/play_vs_human">
                                 <PlayVsHuman game={"tic-tac-toe"} />
                             </Route>
-
                             <Route path="/play_vs_bot">
-                                {/* <Navbar pageTitle={"Play Human vs. Bot"} /> */}
                                 <PlayVsBot game={"tic-tac-toe"}  />
                             </Route>
-
                             <Route path="/play_with_coach">
-                                {/* <Navbar pageTitle={"Play with Coach"} /> */}
                                 <PlayWithCoach game={"tic-tac-toe"} />
                             </Route>    
-
                             <Route path="/fifteen_vs_human">
                                 <PlayVsHuman game={"fifteen-game"} />
                             </Route>
-
                             <Route path="/fifteen_vs_bot">
-                                {/* <Navbar pageTitle={"Play Human vs. Bot"} /> */}
                                 <PlayVsBot game={"fifteen-game"} />
                             </Route>
-
                             {/* <Route path="/magic_squares">
-                                <Navbar pageTitle={"Learn about Magic Squares"} />
                                 <MagicSquares />
                             </Route> */}
-
                         </Switch>
                     </Router>
                 </Box>
