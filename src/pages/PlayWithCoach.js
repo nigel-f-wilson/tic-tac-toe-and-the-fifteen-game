@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'row',
         flex: '0 0 5vh',
+        maxHeight: '5vh'
     },
     boardArea: {
         // border: 'solid green 1px',
@@ -43,7 +44,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.common.black,
         display: 'flex',
         alignItems: 'center',
-        flex: '1 0 30vh',
+        flex: '0 0 35vh',
+        // maxHeight: '30vh'
+
     },
 }));
 
