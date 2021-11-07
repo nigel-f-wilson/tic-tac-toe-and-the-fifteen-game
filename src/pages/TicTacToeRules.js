@@ -59,7 +59,7 @@ export default function FifteenRulesPage() {
                     ends a draw.
                 </Typography>
                 <Box width="100%" mb={3} >
-                    <Grid container mb={3} >
+                    <Grid container spacing={2} mb={3} >
                         <Grid item xs={12} sm={4} >
                             <Button
                                 className={classes.button}

@@ -59,7 +59,7 @@ export default function WelcomePage() {
                     High School aged kids will learn what it means to write a rigorous proof and can apply their algebra skills to create a Magic Square from scratch.
                </Typography>
                 <Box width="100%" mb={3} >
-                    <Grid container >
+                    <Grid container spacing={2} >
                         <Grid item xs={0} sm={2} />
                             
                         <Grid item xs={12} sm={4} >

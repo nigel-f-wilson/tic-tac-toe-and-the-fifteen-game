@@ -71,7 +71,7 @@ export default function FifteenRulesPage() {
                     The two sets 1, 5, 9 and 2, 6, 7 would be winning, even if the player held additional cards not listed. <br/>
                     Bonus Questions: How many different three card combinations are there? How many of them sum to 15?
                 </Typography>
-                <Grid container >
+                <Grid container spacing={2} >
                     <Grid item xs={12} sm={4} >
                         <Button
                             className={classes.button}
