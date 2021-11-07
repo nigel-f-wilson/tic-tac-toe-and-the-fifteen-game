@@ -41,7 +41,7 @@ export default function FifteenRulesPage() {
     return (
         <React.Fragment>
             <AppBar position='sticky' >
-                <Navbar pageTitle={"Tic Tac Toe and the 15 Game"} />
+                <Navbar pageTitle={"Play Tic Tac Toe"} />
             </AppBar>
             <Container className={classes.root} maxWidth='md' >
                 <Typography align='center' color='textPrimary' component='h1' variant='h2' gutterBottom >

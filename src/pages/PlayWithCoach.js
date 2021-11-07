@@ -28,12 +28,12 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
-        flex: '1 0 5vh',
+        flex: '1 0 5%',
     },
     boardArea: {
         // border: 'solid green 1px',
         display: 'flex',
-        flex: '1 0 50vh',
+        flex: '1 0 50%',
         justifyContent: 'center',
         paddingTop: '0.5rem'
     },
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.common.black,
         display: 'flex',
         alignItems: 'center',
-        flex: '1 0 45vh',
+        flex: '1 0 40%',
     },
 }));
 
@@ -62,7 +62,7 @@ export default function PlayWithCoach(props) {
     return (
         <Box className={classes.root} >
             <Box className={classes.navbarArea}>
-                <Navbar pageTitle="Tic Tac Toe with Coach" />
+                <Navbar pageTitle="Tic Tac Toe Coach" />
             </Box>
 
             <Box className={classes.boardArea}>

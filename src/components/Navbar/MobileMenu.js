@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     },
     list: {
         width: 'auto',
-        minWidth: '400px',
+        minWidth: '300px',
         fontSize: '0.8rem',
         backgroundColor: theme.palette.primary.main,
         height: '100%'

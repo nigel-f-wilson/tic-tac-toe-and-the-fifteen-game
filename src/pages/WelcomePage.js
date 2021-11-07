@@ -32,7 +32,7 @@ export default function WelcomePage() {
     return (
         <React.Fragment>
             <AppBar position='sticky' >
-                <Navbar pageTitle={"Tic Tac Toe and the 15 Game"} />
+                <Navbar pageTitle={"Welcome"} />
             </AppBar>
             <Container className={classes.root} maxWidth='md' >
                 <Box p={2} />
