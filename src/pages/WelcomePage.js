@@ -60,7 +60,7 @@ export default function WelcomePage() {
                </Typography>
                 <Box width="100%" mb={3} >
                     <Grid container spacing={2} >
-                        <Grid item xs={0} sm={2} />
+                        <Grid item xs={12} sm={2} />
                             
                         <Grid item xs={12} sm={4} >
                             <Button
@@ -84,7 +84,7 @@ export default function WelcomePage() {
                                 The Fifteen Game
                             </Button>
                         </Grid>
-                        <Grid item xs={0} sm={2} />
+                        <Grid item xs={12} sm={2} />
 
                     </Grid>
                 </Box>
