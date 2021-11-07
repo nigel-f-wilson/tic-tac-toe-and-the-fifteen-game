@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
     },
     infoArea: {
-        flex: '1 0 80%',
+        flex: '1 0 60%',
         display: 'flex',
         flexDirection: 'column',
     },
