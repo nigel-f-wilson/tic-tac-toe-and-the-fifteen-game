@@ -26,11 +26,11 @@ const useStyles = makeStyles(theme => ({
     button: {
     },
     drawer: {
-        // backgroundColor: theme.palette.primary.main,
-        height: 'auto'
+        height: 'auto',
     },
     list: {
         width: 'auto',
+        minWidth: '400px',
         fontSize: '0.8rem',
         backgroundColor: theme.palette.primary.main,
         height: '100%'
