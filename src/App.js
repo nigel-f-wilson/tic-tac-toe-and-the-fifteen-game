@@ -45,13 +45,6 @@ const useStyles = makeStyles((theme) => ({
         overflowX: 'hidden',
 
     },
-    container: {
-        // maxWidth='md' --> max-width: 960px;
-        backgroundColor: theme.palette.common.black,
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-    },
     
 }))
 
