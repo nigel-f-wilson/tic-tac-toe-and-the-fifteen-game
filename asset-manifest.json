@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tic-tac-toe-and-the-fifteen-game/static/css/main.d7d4e577.chunk.css",
-    "main.js": "/tic-tac-toe-and-the-fifteen-game/static/js/main.410e7120.chunk.js",
-    "main.js.map": "/tic-tac-toe-and-the-fifteen-game/static/js/main.410e7120.chunk.js.map",
+    "main.js": "/tic-tac-toe-and-the-fifteen-game/static/js/main.6da25e01.chunk.js",
+    "main.js.map": "/tic-tac-toe-and-the-fifteen-game/static/js/main.6da25e01.chunk.js.map",
     "runtime-main.js": "/tic-tac-toe-and-the-fifteen-game/static/js/runtime-main.9e456339.js",
     "runtime-main.js.map": "/tic-tac-toe-and-the-fifteen-game/static/js/runtime-main.9e456339.js.map",
     "static/js/2.af28e074.chunk.js": "/tic-tac-toe-and-the-fifteen-game/static/js/2.af28e074.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.9e456339.js",
     "static/js/2.af28e074.chunk.js",
     "static/css/main.d7d4e577.chunk.css",
-    "static/js/main.410e7120.chunk.js"
+    "static/js/main.6da25e01.chunk.js"
   ]
 }
