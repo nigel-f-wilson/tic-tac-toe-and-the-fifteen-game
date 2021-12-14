@@ -56,8 +56,6 @@ function generatePositionToOutcomeMap() {
         }
     }
     return outcomeMap
-
-
 }
 
 ////////////////////////////////////////////////////////////////
@@ -115,7 +113,6 @@ export function numbersInWin(ml) {
     )
     return winningTrios.flat()
 }
-
 
 ////////////////////////////////////////////////////////////////
 //  Predicted and Final Game Outcomes: "xWins", "oWins", "draw"
@@ -178,34 +175,12 @@ export function xNumbers(ml) {
 export function oNumbers(ml) {
     return moveListStringToArray(ml).filter((move, turn) => turn % 2 === 1)
 }
-// function playerOneNumbers(ml) {  // Always the Human
-//     return (playerOneIsX) ? xNumbers(ml) : oNumbers(ml)
-// }
-// function playerTwoNumbers(ml) {  // Human or Bot, Depending on mode
-//     return (playerOneIsX) ? oNumbers(ml) : xNumbers(ml)
-// }
 
 
-
-////////////////////////////////////////////////////////////////
-// Convert Move List Representations:   String <--> Array
-////////////////////////////////////////////////////////////////
 export function moveListStringToArray(ml) {               // "123" --> [1,2,3]
     return Array.from(ml).map(e => Number(e))
 }
-// function moveListArrayToString(mla) {               // [1,2,3] --> "123"
-//     return mla.toString().replaceAll(",", "")
-// }
 
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////
-// Get Children and Helpers:  An Array of move list Strings
-////////////////////////////////////////////////////////////////
 export function getChildren(ml) {
     let children = []
     getValidMoves(ml).forEach(move => children.push(ml + move))

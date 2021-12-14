@@ -29,29 +29,20 @@ import {
     ThemeProvider,
 } from '@material-ui/core/styles'
 
-
-
 const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
         width: '100vw',
         backgroundColor: theme.palette.common.black,
-
         display: 'flex',
         flexDirection: 'column',
-        // justifyContent: 'center',
-        // alignItems: 'stretch',
         overflowY: 'scroll',
         overflowX: 'hidden',
-
     },
-    
 }))
-
 
 export default function App() {
     const classes = useStyles();
-  
     return (
         <React.Fragment>
             <CssBaseline />

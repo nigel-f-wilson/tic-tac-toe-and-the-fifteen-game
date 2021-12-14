@@ -29,27 +29,23 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
     },
     navbarArea: {
-        // border: 'solid blue 1px',
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
         flex: '1 0 5vh',
     },
     boardArea: {
-        // border: 'solid green 1px',
         display: 'flex',
         flex: '1 0 50vh',
         justifyContent: 'center',
     },
     panelArea: {
-        // border: 'solid red 1px',
         color: theme.palette.common.white,
         backgroundColor: theme.palette.common.black,
         display: 'flex',
         flex: '1 0 45vh',
     },
 }));
-
 
 export default function PlayVsHuman(props) {
     const classes = useStyles();
@@ -62,16 +58,13 @@ export default function PlayVsHuman(props) {
     let board = (props.game === "tic-tac-toe") ? 
         <TicTacToeBoard
             moveList={moveList}
-
             handleBoardClick={handleBoardClick}
             showHints={false}
         /> : 
         <FifteenBoard
             moveList={moveList}
-
             handleBoardClick={handleBoardClick}
             showHints={false}
-
         />
 
     
