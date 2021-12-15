@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // My Logical Components
 // import positionToOutcomeMap from "../pages/positionToOutcomeMap";
-import { gameOver } from "../logic/GameLogic";
+import { gameOver, generatePositionToOutcomeMap } from "../logic/GameLogic";
 
 // My React Components
 import Navbar from "../components/Navbar/Navbar"
@@ -53,6 +53,8 @@ const useStyles = makeStyles((theme) => ({
 // In Play With Coach mode X always goes first
 
 export default function PlayWithCoach(props) {
+    const outcomeMap = generatePositionToOutcomeMap()
+
     const classes = useStyles();
     // const xGoesFirst = true  // X always goes first in Play with Coach Mode
 
@@ -73,6 +75,8 @@ export default function PlayWithCoach(props) {
                     moveList={moveList}
                     showHints={showHints}
                     handleBoardClick={handleBoardClick}
+                    outcomeMap={outcomeMap}
+
                 />
             </Box>
             <Box className={classes.panelArea}>
@@ -81,6 +85,7 @@ export default function PlayWithCoach(props) {
                     showHints={showHints}
                     toggleShowHints={toggleShowHints}
                     handleUndoClick={handleUndoClick}
+                    outcomeMap={outcomeMap}
                 />
             </Box>
         </Box>

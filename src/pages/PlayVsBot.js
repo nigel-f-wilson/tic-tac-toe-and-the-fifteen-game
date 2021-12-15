@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // My Logical Components
 // import positionToOutcomeMap from "../pages/positionToOutcomeMap";
-import { status, gameOver, nextPlayer, availableNumbers } from "../logic/GameLogic";
+import { status, gameOver, nextPlayer, availableNumbers, generatePositionToOutcomeMap } from "../logic/GameLogic";
 import { selectMoveRandomly, winningMoves, urgentDefensiveMoves, sortBotMoves } from "../logic/BotLogic";
 
 // My React Components
@@ -49,6 +49,8 @@ const useStyles = makeStyles((theme) => ({
 // In Play With Coach mode X always goes first
 
 export default function PlayVsBot(props) {
+    const outcomeMap = generatePositionToOutcomeMap()
+
     const classes = useStyles();
 
     // const xGoesFirst = true  // X always goes first
@@ -258,7 +260,7 @@ export default function PlayVsBot(props) {
     function hardProtocol(ml) {
         console.log(`Outcome Graph Hard Protocol called for move list: [${ml}]`)
         console.time('getHardFromGraph')
-        let sorted = sortBotMoves(ml, humanGoesFirst)
+        let sorted = sortBotMoves(ml, humanGoesFirst, outcomeMap)
         // console.log(`BOT SORTED its choices from position [${ml}]:`)
         // console.log(`Bot found these Winning Moves: ${sorted.winningForBot}`)  
         // console.log(`Bot found these Drawing Moves: ${sorted.drawing}`)

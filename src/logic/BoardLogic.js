@@ -3,7 +3,7 @@ import {
     xNumbers,
     oNumbers,
     trioList,
-    outcomeMap,
+    // outcomeMap,
     intersect,
     availableNumbers,
     moveListStringToArray
@@ -35,7 +35,7 @@ export function getBoardIcons(ml) {
 
 
 
-export function getBoardHints(ml) {
+export function getBoardHints(ml, outcomeMap) {
     let colors = Array(10).fill('noColor')
     availableNumbers(ml).forEach(num => {
         let outcome = outcomeMap.get(ml + num.toString())

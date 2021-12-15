@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { status, outcomeMap, getParent } from "../../logic/GameLogic";
+import { status, getParent } from "../../logic/GameLogic";
 import { winningMoves, urgentDefensiveMoves, doubleAttackingMoves } from "../../logic/BotLogic";
 
 
@@ -37,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function CoachPanel(props) {
+    const { outcomeMap } = props
+    
     const classes = useStyles();
 
     function getCommentLabel(mls) {

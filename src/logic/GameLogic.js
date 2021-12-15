@@ -44,8 +44,8 @@ function getListOfPossiblePositions() {
 }
 
 
-export const outcomeMap = generatePositionToOutcomeMap()
-function generatePositionToOutcomeMap() {
+// export const outcomeMap = generatePositionToOutcomeMap()
+export function generatePositionToOutcomeMap() {
     let outcomeMap = new Map()
     let list = listOfPossiblePositions
     for (let length = 9; length >= 0; length--) {

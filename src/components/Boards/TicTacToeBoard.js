@@ -37,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Board(props) {
+    const { outcomeMap } = props
+    
     const classes = useStyles();    
     const boardNumbers = [2,9,4,7,5,3,6,1,8]
     let moveList = props.moveList
@@ -79,7 +81,7 @@ export default function Board(props) {
             return highlightWins(ml)
         }
         else if (props.showHints === true) {
-            return getBoardHints(ml)
+            return getBoardHints(ml, outcomeMap)
         }
         else {
             return Array(10).fill('noColor')
