@@ -31,29 +31,21 @@ export default function WelcomePage() {
     return (
         <React.Fragment>
             <Navbar pageTitle={"Tic Tac Toe and the 15 Game"} />
+            <Container maxWidth='sm' >
                 <Box p={2} />
                 <Typography align='center' color='textPrimary' component='h1' variant='h3' gutterBottom >
                     A Math Lesson in Disguise
                 </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    Mathematical thinking has a playful side. 
-                    In fact, there are whole branches of study known as "game theory" and "recreational mathematics". 
-                    Sadly, this side of mathematics has been excluded from many primary and secondary school curriculums by folks who
-                     think we don't have enough time in the school day to teach anything but the "fundamentals".
-                    The result of this approach is that many kids give up on learning math before they get to "the good part". 
-               </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    This project seeks to counteract that trend by using two simple strategy games to introduce two of the most important concepts in math.
-                    One of these games is likely familiar to you, the other is probably not. 
-                    They both have a surprising amount to teach, if you play along.
+
+                <Typography align='left' color='textPrimary' component='h4' variant='h4' gutterBottom >
+                    Behind the Scenes
                 </Typography>
-                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
-                    This lesson has something to offer students of all experience levels.
-                    Kids of Elementary School age can use it to practice their fluency at mentally computing sums and differences.
-                    Middle School aged kids will learn about combinations and permutations as they build their tree diagrams and consider all the
-                    possible things that could happen next. 
-                    High School aged kids will learn what it means to write a rigorous proof and can apply their algebra skills to create a Magic Square from scratch.
-               </Typography>
+                <Typography variant='body1' color='textPrimary' className={classes.paragraph}>
+                    This lesson is built with code that is open-source and available on my <a href="https://github.com/nolastemgarden">Github</a> account,
+                    so if you have something to add, a bug to report, or simply want to see how it works you are welcome to open an issue or &nbsp;
+                    <a href="https://github.com/nolastemgarden/tic-tac-toe-and-the-fifteen-game">clone the repository</a>!
+                </Typography>
+                
                 <Box width="100%" mb={3} >
                     <Grid container spacing={2} >
                         <Grid item xs={12} sm={2} />
@@ -224,3 +216,24 @@ export default function WelcomePage() {
 //     find it helpful to develop your own shorthand notation for a position. You will certainly need to come up with a precice 
 //     definition of the word "mistake".
 // </Typography>
+
+
+{/* <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    Mathematical thinking has a playful side. 
+                    In fact, there are whole branches of study known as "game theory" and "recreational mathematics". 
+                    Sadly, this side of mathematics has been excluded from many primary and secondary school curriculums by folks who
+                     think we don't have enough time in the school day to teach anything but the "fundamentals".
+                    The result of this approach is that many kids give up on learning math before they get to "the good part". 
+               </Typography>
+                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    This project seeks to counteract that trend by using two simple strategy games to introduce two of the most important concepts in math.
+                    One of these games is likely familiar to you, the other is probably not. 
+                    They both have a surprising amount to teach, if you play along.
+                </Typography>
+                <Typography paragraph align='justify' color='textPrimary' component='p' variant='body1' gutterBottom >
+                    This lesson has something to offer students of all experience levels.
+                    Kids of Elementary School age can use it to practice their fluency at mentally computing sums and differences.
+                    Middle School aged kids will learn about combinations and permutations as they build their tree diagrams and consider all the
+                    possible things that could happen next. 
+                    High School aged kids will learn what it means to write a rigorous proof and can apply their algebra skills to create a Magic Square from scratch.
+               </Typography> */}
