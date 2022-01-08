@@ -8,13 +8,7 @@ import {
 import Navbar from "../components/Navbar/Navbar"
 
 // MUI  components
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography'
-import AppBar from '@material-ui/core/AppBar'
-
+import { Box, Container, Grid, Button, Typography } from '@material-ui/core'
 
 // Custom Styling
 import { makeStyles } from '@material-ui/core/styles';
