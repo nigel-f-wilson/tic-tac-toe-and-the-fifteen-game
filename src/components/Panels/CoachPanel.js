@@ -41,15 +41,22 @@ export default function CoachPanel(props) {
     
     const classes = useStyles();
 
-    function getCommentLabel(mls) {
-        // console.log(`getCommentLabel called with moveList: ${mls}`);
-        let currentStatus = status(mls)
-        let currentOutcome = outcomeMap.get(mls)
-        let previousOutcome = outcomeMap.get(getParent(mls));
-        // console.log(`Current Outcome ${currentOutcome}`);
-        // console.log(`Previous Outcome ${previousOutcome}`);
+    
+     // TODO 
+     // Move this function to the file GetCommentary
+     // Remove all JSX from getCommentary and instead of exporting a component export a function that takes the moveList
+     // and returns commentary as a string.
+    function getCommentLabel(moveList) {  
+        
+        let currentStatus = status(moveList)
+        let currentOutcome = outcomeMap.get(moveList)
+        let previousOutcome = outcomeMap.get(getParent(moveList));
+        console.log(`getCommentLabel called with moveList: ${moveList}`);
+        console.log(`Current Outcome ${currentOutcome}`);
+        console.log(`Previous Outcome ${previousOutcome}`);
+        
         let label = "error"
-        if (mls.length === 0) {
+        if (moveList.length === 0) {
             label = "newGame"
         }
         else if (currentStatus === "xWins") {
@@ -61,33 +68,39 @@ export default function CoachPanel(props) {
         else if (currentStatus === "draw") {
             label = "draw"
         }
-        else if (mls.length === 1) {
-            if (mls.charAt(0) === "5") {
+        else if (moveList.length === 1) {
+            if (moveList.charAt(0) === "5") {
                 label = "centerOpening"
             }
-            else if (Number(mls.charAt(0)) % 2 === 0) {
+            else if (Number(moveList.charAt(0)) % 2 === 0) {
                 label = "cornerOpening"
             }
             else {
                 label = "edgeOpening"
             }
         } 
-        else if (winningMoves(mls).length > 0 ) {
+        else if (winningMoves(moveList).length > 0 ) {
             label = "immediateWin"
         }
-        else if (urgentDefensiveMoves(mls).length === 1) {          //  Modify this to pre and postpend  "A Mistake!" and "Not all moves are good in this position, choose carefully!"
+        else if (urgentDefensiveMoves(moveList).length === 1) {         
             label = "urgentDefence"
         }
-        else if (urgentDefensiveMoves(mls).length === 2) {
+        else if (urgentDefensiveMoves(moveList).length === 2) {
             label = "losing"
         }
-        else if (doubleAttackingMoves(mls).length > 0) {
+        else if (doubleAttackingMoves(moveList).length > 0) {
             label = "doubleAttack"
         }
-        else if (previousOutcome === "draw" && currentOutcome === "draw") {
+        else if (previousOutcome === "draw" && currentOutcome === "draw") { 
             label = "sound"
         }
-        else if (previousOutcome === "draw" && (currentOutcome === "xWins" || currentOutcome === "oWins")) {
+        else if (previousOutcome === "draw" && (currentOutcome === "xWins" || currentOutcome === "oWins")) {  // in testing
+            label = "mistake"
+        }
+        else if (previousOutcome === "oWins" && (currentOutcome === "xWins" || currentOutcome === "draw")) {   // in testing
+            label = "mistake"
+        }
+        else if (previousOutcome === "xWins" && (currentOutcome === "oWins" || currentOutcome === "draw")) {   // in testing
             label = "mistake"
         }
         else if (currentOutcome === "draw" && (previousOutcome === "xWins" || previousOutcome === "oWins")) {
