@@ -53,7 +53,8 @@ const theme = createTheme({
 
         },
         body1: {
-            color: white
+            color: white,
+            lineHeight: 1.35
         }
     },
     status: {
