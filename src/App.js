@@ -36,8 +36,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.common.black,
         display: 'flex',
         flexDirection: 'column',
-        overflowY: 'scroll',
-        overflowX: 'hidden',
+        overflow: 'hidden',
     },
 }))
 
