@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
     },
     navbarArea: {
-        // border: 'solid blue 1px',
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
@@ -32,21 +31,17 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: '5vh'
     },
     boardArea: {
-        // border: 'solid green 1px',
         display: 'flex',
         flex: '0 0 50vh',
         justifyContent: 'center',
         paddingTop: '0.5rem'
     },
     panelArea: {
-        // border: 'solid red 1px',
         color: theme.palette.common.white,
         backgroundColor: theme.palette.common.black,
         display: 'flex',
         alignItems: 'center',
         flex: '0 0 35vh',
-        // maxHeight: '30vh'
-
     },
 }));
 
@@ -54,7 +49,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PlayWithCoach(props) {
     const outcomeMap = generatePositionToOutcomeMap()
-
     const classes = useStyles();
     // const xGoesFirst = true  // X always goes first in Play with Coach Mode
 

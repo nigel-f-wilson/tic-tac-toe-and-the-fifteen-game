@@ -9,10 +9,7 @@ import logo from "../../images/nsgLogoSnipped.png";
 
 
 // MATERIAL-UI COMPONENTS
-import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-
+import { Box, Container, Typography, AppBar } from '@material-ui/core';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -50,21 +47,23 @@ const useStyles = makeStyles((theme) => ({
 export default function Navbar(props) {
     const classes = useStyles();
     return (
-        <Box className={classes.navbar} >
-            <Container maxWidth='md' disableGutters height='inherit' >
-                <Box display='flex' justifyContent='center' >
-                    <Box className={classes.logo}  />
-                    <Box className={classes.pageTitle} >
-                        <Typography align='center' variant='h4' noWrap >
-                            {props.pageTitle}
-                        </Typography>
+        <AppBar position='sticky' >
+            <Box className={classes.navbar} >
+                <Container maxWidth='md' disableGutters height='inherit' >
+                    <Box display='flex' justifyContent='center' >
+                        <Box className={classes.logo} />
+                        <Box className={classes.pageTitle} >
+                            <Typography align='center' variant='h4' noWrap >
+                                {props.pageTitle}
+                            </Typography>
+                        </Box>
+                        <Box display='flex' flexBasis='10%' justifyContent='flex-end' >
+                            <MobileMenu />
+                        </Box>
                     </Box>
-                    <Box display='flex' flexBasis='10%' justifyContent='flex-end' >
-                        <MobileMenu />
-                    </Box>
-                </Box>
-                
-            </Container>
-        </Box>
+
+                </Container>
+            </Box>
+        </AppBar>
     )
 }

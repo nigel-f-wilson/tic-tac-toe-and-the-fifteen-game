@@ -12,7 +12,7 @@ import FifteenBoard from "../components/Boards/FifteenBoard"
 import BotPanel from "../components/Panels/BotPanel";
 
 // MUI  components
-import Box from '@material-ui/core/Box';
+import { Box, Container } from '@material-ui/core';
 
 // Custom Styling
 import '../styles/TicTacToe.css';
@@ -20,25 +20,16 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
-        height: '97%',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
     },
-    navbarArea: {
-        // border: 'solid blue 1px',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'row',
-        flex: '1 0 5vh',
-    },
     boardArea: {
-        // border: 'solid green 1px',
         display: 'flex',
         flex: '1 0 50vh',
         justifyContent: 'center',
     },
     panelArea: {
-        // border: 'solid red 1px',
         color: theme.palette.common.white,
         backgroundColor: theme.palette.common.black,
         display: 'flex',
@@ -80,12 +71,10 @@ export default function PlayVsBot(props) {
     
     return (
         <Box className={classes.root} >
-            <Box className={classes.navbarArea}>
-                <Navbar pageTitle={(props.game === "tic-tac-toe") ? "Tic Tac Toe vs. Bot" : "15 Game vs. Bot"} />
-            </Box>
-            <Box className={classes.boardArea}>
+            <Navbar pageTitle={(props.game === "tic-tac-toe") ? "Tic Tac Toe vs. Bot" : "15 Game vs. Bot"} />
+            <Container maxWidth="sm" className={classes.boardArea}>
                 {board}
-            </Box>
+            </Container>
             <Box className={classes.panelArea}>
                 <BotPanel
                     game={props.game}
@@ -170,20 +159,16 @@ export default function PlayVsBot(props) {
         }
     }
 
-    
-    
     function handleNewGameClick() {
         setGameNumber(++gameNumber)
         setHumanGoesFirst(true)
         setMoveList(startingPosition)
     }
-
     function handleBotGoFirstClick() {
         console.assert(moveList.length === 0, `handleLetBotGoFirstClick was called but it is not the frst move of the game!`)
         setHumanGoesFirst(false)
         handleBotsTurn('') // if the bot is going first the movelist is empty.
     }
-
     function handleDifficultyModeChange(newDifficulty) {
         setGameNumber(1)
         setHumanGoesFirst(true)
@@ -191,7 +176,6 @@ export default function PlayVsBot(props) {
         setMoveList(startingPosition)
         setDifficultyMode(newDifficulty)
     }
-
 
     // Find and make a move for the Bot with a slight delay. 
     function handleBotsTurn(ml = moveList) {
@@ -210,7 +194,6 @@ export default function PlayVsBot(props) {
     //////////////////////////////////////////////////////////////     
     //  GET  BOT  MOVE  PROTOCOLS
     ////////////////////////////////////////////////////////////// 
-
     function getBotMove(ml = moveList) {
         if (difficultyMode === "easy") {
             return easyProtocol(ml)
@@ -225,7 +208,6 @@ export default function PlayVsBot(props) {
             console.error(`getBotMove called with invalid difficulty mode!!!`)
         }
     }
-
     // In EASY mode: Bot wins immediately if it can and otherwise selects a random move. 
     function easyProtocol(ml) {
         if (winningMoves(ml).length > 0) {
@@ -236,7 +218,6 @@ export default function PlayVsBot(props) {
             return selectMoveRandomly(availableNumbers(ml))
         }
     }
-
     // In MEDIUM mode, Bot wins immediately if possible.
     // In MEDIUM mode, Bot blocks any immediate threats but does not look any further ahead. 
     function mediumProtocol(ml) {
@@ -276,25 +257,5 @@ export default function PlayVsBot(props) {
             return selectMoveRandomly(sorted.winningForHuman)    
         }
     }
-    // function hardProtocolWithShortcuts(ml) {
-    //     console.log(`Hard Protocol called for move list: [${ml}]`)
-    //     if (ml.length <= 1) {
-    //         return getOpeningBookMove(ml)
-    //     }
-    //     let wins = winningMoves(ml)
-    //     let blocks = urgentDefensiveMoves(ml)
-
-    //     if (wins.length > 0) {
-    //         return selectMoveRandomly(wins)
-    //     }
-    //     else if (blocks.length > 0) {
-    //         return selectMoveRandomly(blocks)
-    //     }
-
-    //     else {
-
-
-    //     }
-    // }
 }
 

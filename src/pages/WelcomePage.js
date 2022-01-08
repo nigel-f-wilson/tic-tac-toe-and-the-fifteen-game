@@ -13,7 +13,6 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
-import AppBar from '@material-ui/core/AppBar'
 
 
 // Custom Styling
@@ -31,10 +30,7 @@ export default function WelcomePage() {
     
     return (
         <React.Fragment>
-            <AppBar position='sticky' >
-                <Navbar pageTitle={"Welcome"} />
-            </AppBar>
-            <Container maxWidth='md' >
+            <Navbar pageTitle={"Tic Tac Toe and the 15 Game"} />
                 <Box p={2} />
                 <Typography align='center' color='textPrimary' component='h1' variant='h3' gutterBottom >
                     A Math Lesson in Disguise

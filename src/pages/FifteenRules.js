@@ -20,7 +20,6 @@ import AppBar from '@material-ui/core/AppBar'
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
-        // borderRight: 'solid black 1rem',
         width: '100%',
         minHeight: 'calc(100vh - 4rem)',
         overflowY: "scroll",
@@ -41,9 +40,7 @@ export default function FifteenRulesPage() {
 
     return (
         <React.Fragment>
-            <AppBar position='sticky' >
-                <Navbar pageTitle={"The 15 Game"} />
-            </AppBar>
+            <Navbar pageTitle={"The 15 Game"} />
             <Container className={classes.root} maxWidth='md' >
 
 
