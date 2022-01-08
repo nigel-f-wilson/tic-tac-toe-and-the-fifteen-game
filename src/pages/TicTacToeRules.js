@@ -133,3 +133,48 @@ export default function FifteenRulesPage() {
         </React.Fragment>
     );
 }
+
+
+// <Typography align='left' variant='h6' color='textPrimary' gutterBottom >
+//                 Tic-Tac-Toe for Elementary Grades
+//             </Typography>
+//             <Typography variant='body1'  gutterBottom >
+//                 Kids as young as 1st grade have long enjoyed this classic paper and pencil game. 
+//                 Most children get pretty good at the game by the time they have played a few dozen rounds.
+//                 At this point I like to challenge them to find (and write down) a step by step strategy that will guarantee them a win as long as they get to go first. 
+//                 Leave students to their own devices for a while to invent ways of writing down their moves and organizing their thoughts.
+//                 Once they have had plenty of opportunity for creative struggle you may introduce them to tree diagrams and to systems of notation that assign a name to each cell.
+//             </Typography>
+//             <Typography align='left' variant='h6' color='textPrimary' gutterBottom >
+//                 The 15 Game for Elementary Grades
+//             </Typography>
+//             <Typography variant='body1' gutterBottom >
+//                 Kids as young as 1st grade have long enjoyed this classic paper and pencil game.
+//                 Most children get pretty good at the game by the time they have played a few dozen rounds.
+//                 At this point I like to challenge them to find (and write down) a step by step strategy that will guarantee them a win as long as they get to go first.
+//                 Leave students to their own devices for a while to invent ways of writing down their moves and organizing their thoughts.
+//                 Once they have had plenty of opportunity for creative struggle you may introduce them to tree diagrams and to systems of notation that assign a name to each cell.
+//             </Typography>
+
+
+//             <Typography align='left' variant='h6' color='textPrimary' gutterBottom >
+//                 Tic-Tac-Toe as an Intro to Proof
+//             </Typography>
+//             <Typography variant='body1'  gutterBottom >
+//                 By the time they have played a few dozen rounds of Tic-Tac-Toe, most children have gotten pretty good at the game.
+//                 At this point I like to challenge them to find (and write down) a strategy that will guarantee them a win
+//                 every time, as long as they get to make the first move. First let students invent their own ways of writing down move orders and organizing their thoughts.
+//                 Once they have had a chance to get creative and to struggle you may introduce them to tree diagrams and to systems of notation assign a letter name to each cell.
+//             </Typography>
+//             <Typography variant='body1'  gutterBottom >
+//                 Generally, students will come up with a few different strategies that they think guarantee a win, but one by one
+//                 counterexamples will be found and most kids will eventually intuit that this is an impossible task.
+//                 At this point I modify the objective: If you think there is no strategy that guarantees a win, then prove that instead!
+//                 Prove that you can at get a draw in the worst case no matter what moves your opponent makes when they go first.
+//             </Typography>
+//             <Typography variant='body1'  gutterBottom >
+//                 The point here is that we will not settle for a final answer that is just based on intuition.
+//                 Tic Tac Toe is a classic game with a reputation for being one of the simplest strategy games, but this reputation causes many folks to
+//                 underestimate its depth. It is very common for people to asume that they have fully mastered Tic-Tac-Toe just because they know a way to never lose,
+//                 but a true master plays both offens and defense. Just because you can't force your opponent to lose doesn't mean you should let your guard down: unforced errors happen all the time!
+//             </Typography>
