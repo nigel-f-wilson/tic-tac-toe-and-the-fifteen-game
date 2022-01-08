@@ -50,13 +50,10 @@ const useStyles = makeStyles((theme) => ({
 export default function PlayWithCoach(props) {
     const outcomeMap = generatePositionToOutcomeMap()
     const classes = useStyles();
-    // const xGoesFirst = true  // X always goes first in Play with Coach Mode
 
-    let startingPosition = ""  // vs []
-    let [moveList, setmoveList] = useState(startingPosition);
-
+    let startingPosition = "" 
+    let [moveList, setMoveList] = useState(startingPosition);
     let [showHints, setShowHints] = useState(false);
-    // let [showHints, setShowHints] = useState(true);
 
     return (
         <Box className={classes.root} >
@@ -70,7 +67,6 @@ export default function PlayWithCoach(props) {
                     showHints={showHints}
                     handleBoardClick={handleBoardClick}
                     outcomeMap={outcomeMap}
-
                 />
             </Box>
             <Box className={classes.panelArea}>
@@ -84,7 +80,6 @@ export default function PlayWithCoach(props) {
             </Box>
         </Box>
     )
-
     
     // CLICK HANDLERS
     function handleBoardClick(squareClicked) {
@@ -98,19 +93,14 @@ export default function PlayWithCoach(props) {
         }
         // If we reach this point the clicked square is open and the game is not over yet ... 
         let updatedMoveList = moveList.concat(squareClicked)
-        console.log(`MoveList: ${updatedMoveList}`)
-
-        setmoveList(updatedMoveList);
-        // This function does not pass along any of its results, it acts thru side-effects. It calls setHistory and use of that hook tells React it needs to re-render all components that depend on the state "history".
+        // console.log(`MoveList: ${updatedMoveList}`)
+        setMoveList(updatedMoveList);
     }
     function handleUndoClick() {
         const shortenedMoveList = moveList.slice(0, moveList.length - 1)
         console.log(`handleUndoClick() removed ${moveList[moveList.length - 1]} . New Shortened history: ${shortenedMoveList}`);
-        setmoveList(shortenedMoveList);
+        setMoveList(shortenedMoveList);
     }
-    // function handleNewGameClick() {
-    //     setmoveList(startingPosition);
-    // }
     function toggleShowHints() {
         setShowHints(!showHints)
     }
