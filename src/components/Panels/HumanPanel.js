@@ -18,21 +18,18 @@ import {Box, Grid, Container} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     panel: {
-        // border: 'solid orange 1px',
         width: '100%',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
     },
     infoArea: {
-        // border: 'solid red 1px',
         flex: '1 0 50%',
         display: 'flex',
         flexDirection: 'column',
         padding: '1.0rem',
     },
     controls: {
-        // border: 'solid green 1px',
         flex: '1 0 50%',
     },
 }));
