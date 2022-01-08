@@ -28,13 +28,13 @@ export default function StatusHeader(props) {
         else if (props.game === 'fifteen-game') {
             switch (status) {
                 case "xWins":
-                    return "Game Over. Red Wins!"
+                    return "Game Over. Yellow Wins!"
                 case "oWins":
                     return "Game Over. Blue Wins!"
                 case "draw":
                     return "Game Over! Draw."
                 case "xNext":
-                    return "It is Red's turn."
+                    return "It is Yellow's turn."
                 case "oNext":
                     return "It is Blue's turn."
                 default:
