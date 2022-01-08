@@ -29,17 +29,18 @@ const theme = createTheme({
             disabledOpacity: '0.5'
         },
         playerOne: {
-            backgroundColor: '#C11',
+            backgroundColor: '#ffd600',
             text: '#000'
         }, 
         playerTwo: {
-            backgroundColor: '#11C',
+            backgroundColor: '#2962ff',
             text: '#FFF'
         }, 
     },
     typography: {
         h4: {
-            lineHeight: 1.0
+            lineHeight: 1.0,
+            fontSize: "1.8rem"
         },
         h5: {
             lineHeight: 1.2
