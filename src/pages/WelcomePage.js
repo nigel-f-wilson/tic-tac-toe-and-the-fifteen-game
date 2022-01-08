@@ -8,11 +8,7 @@ import {
 import Navbar from "../components/Navbar/Navbar"
 
 // MUI  components
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography'
+import { Box, Container, Grid, Button, Typography, Card, CardActionArea, CardContent, CardHeader } from '@material-ui/core'
 
 
 // Custom Styling
@@ -25,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     }, 
     scrollingContainer: {
         overflowY: "scroll"
+    },
+    cardTitle: {
+        color: "#000",
     }
 }));
 
@@ -46,20 +45,20 @@ export default function WelcomePage() {
                     when it is playing either game, the only thing that is different is how the game is depicted visually.
                 </Typography>
 
-                <Grid container >
-                    <Grid item zeroMinWidth xs={false} sm={2} />
-                    <Grid item xs={6} sm={4} >
+                <Grid container spacing={3} >
+                    <Grid item zeroMinWidth xs={false} sm={1} />
+                    <Grid item xs={6} sm={5} >
                         <GameCard 
                             title="Tic Tac Toe"
                         />
                     </Grid>
-                    <Grid item xs={6} sm={4} >
+                    <Grid item xs={6} sm={5} >
                         <GameCard
                             title="The 15 Game"
 
                         />
                     </Grid>
-                    <Grid item zeroMinWidth xs={false} sm={2} />
+                    <Grid item zeroMinWidth xs={false} sm={1} />
 
                 </Grid>
                 
@@ -84,18 +83,31 @@ export default function WelcomePage() {
     );
 }
 
-function GameCard() {
+function GameCard(props) {
     const classes = useStyles();
+    let { title } = props
+
     return (
-        <Button
-            className={classes.button}
-            variant="contained"
-            color="primary"
-            component={RouterLink}
-            to='/tic_tac_toe_rules'
-        >
-            Tic Tac Toe
-        </Button>
+        <Card >
+            <CardHeader 
+                title={title}
+                className={classes.cardTitle}
+                titleTypographyProps={{
+                    variant: "h4",
+                    align: "center"
+                }}
+            />
+
+            <Button
+                className={classes.button}
+                variant="contained"
+                color="primary"
+                component={RouterLink}
+                to='/tic_tac_toe_rules'
+            >
+                Tic Tac Toe
+            </Button>
+        </Card>
     )
 }
 
