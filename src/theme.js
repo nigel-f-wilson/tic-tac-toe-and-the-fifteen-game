@@ -3,8 +3,7 @@ import {
     responsiveFontSizes,
 } from '@material-ui/core/styles';
 
-// import purple from '@material-ui/core/colors/purple';
-// import green from '@material-ui/core/colors/green';
+const white = "#FFF"
 
 const theme = createTheme({
     palette: {
@@ -12,16 +11,16 @@ const theme = createTheme({
             light: '#669944',
             main: '#2e6b12',
             dark: '#004000',
-            contrastText: '#FFFFFF'
+            contrastText: white
         },
         secondary: {
-            light: '#FFFFF',
+            light: white,
             main: '#669944',
             dark: '#777777',
-            contrastText: '#FFFFFF'
+            contrastText: white
         },
         text: {
-            primary: '#FFFFFF',
+            primary: white,
             secondary: '#000000'
         },
         action: {
@@ -34,16 +33,27 @@ const theme = createTheme({
         }, 
         playerTwo: {
             backgroundColor: '#2962ff',
-            text: '#FFF'
+            text: white
         }, 
     },
     typography: {
         h4: {
-            lineHeight: 1.0,
-            fontSize: "1.8rem"
+            lineHeight: 1,
+            fontSize: "2.125rem"
         },
         h5: {
-            lineHeight: 1.2
+            lineHeight: 1,
+            fontSize: "1.8rem"
+
+        },
+        h6: {
+            lineHeight: 1,
+            fontSize: "1.6rem",
+            fontWeight: 400
+
+        },
+        body1: {
+            color: white
         }
     },
     status: {
@@ -56,6 +66,4 @@ const theme = createTheme({
 
 });
 
-
-export default responsiveFontSizes(theme);
-
+export default responsiveFontSizes(theme)
