@@ -63,45 +63,40 @@ export default function FifteenRulesPage() {
         <React.Fragment>
             <Navbar pageTitle={"The 15 Game"} />
             <Container className={classes.scrollingContainer} maxWidth='sm' >
+                
                 <Typography align='center' color='textPrimary' variant='h2' gutterBottom >
                     The Fifteen Game
                 </Typography>
 
                 <CardGrid />
+
                 
                 <Typography align='left' variant="h4" color='textPrimary' gutterBottom >
                     Rules of Play
                 </Typography>
                 <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
                     The Fifteen Game is a two-player turn-based game. 
-                    Though it is traditionally played with a set of cards numbered one through nine, it can just as easily be
-                    played with paper and pencil. Each time it is their turn a player must claim one of the remaining numbered cards.
+                    It is traditionally played with a set of numbered cards but it can easily be adapted for
+                    paper-and-pencil play. Players alternate claiming one of the numbered cards each turn until someone wins or no cards remain.
                 </Typography>
-                <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
-                    Each time it is their turn a player must claim one of the remaining numbered cards. Both players have the same goal:
-                    be first to collect a set of exactly Three cards that adds up to exactly Fifteen.
+                <Typography align='left' variant="h6" color='textPrimary' gutterBottom >
+                    Winning
                 </Typography>
-                <Typography align='justify' variant='body1' color='textPrimary' style={{ paddingBottom: "1.5rem"}} >
+                <Typography align='justify' variant='body1' color='textPrimary' style={{ paddingBottom: "1rem"}} >
+                    Both players have the same goal: be first to collect a set of exactly Three cards that adds up to exactly Fifteen. 
                     You may collect more than three cards, play continues until all nine cards are claimed.
                     If you do collect more than three cards you will have to ignore any extras when looking for winning combos.
                     If all nine cards are claimed and neither player has a three-card subset that sums to 15 then the game ends a draw.
                 </Typography>
-
-                <Typography align='left' variant='h4' color='textPrimary' gutterBottom >
+                <Typography align='left' variant='h6' color='textPrimary' gutterBottom >
                     Examples
                 </Typography>
                 <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
-                    Taking the 6 and the 9 does NOT win because even though they add up to 15 it is only TWO cards.
-                </Typography>
-                <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
-                    Taking the 1, 3, 4, and 7 does NOT win because even though they add up to 15 it is a FOUR card set.
-                </Typography>
-                <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
-                    Taking the 6, 7, and 8 does NOT win because they add up to MORE than 15.
-                </Typography>
-                <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
-                    Taking the 1, 5, and 9 does WIN even if you have claimed additional cards because those three add up to exactly 15.
-                    For the same reason 2, 6, and 7 is a winning combo.
+                    &#8226; &nbsp; Taking the 6 and 9 does NOT win. They add to 15, but it is only <u>two</u> cards.
+                    <br /> &#8226; &nbsp; Taking 1 3 4 7 does NOT win. Though they sum to 15, it is <u>four</u> cards.
+                    <br /> &#8226; &nbsp; Taking the 6 7 8 does NOT win because they add up to <u>more</u> than 15.
+                    <br /> &#8226; &nbsp; Taking the 1 5 9 does WIN even if you have claimed additional cards because those three add up to exactly 15.
+                    2 6 7 is another winning combo.
                 </Typography>
                 <Typography align='justify' variant='body1' color='textPrimary' gutterBottom >
                     Bonus Questions: How many different three card combinations are there total? How many of them sum to 15?
