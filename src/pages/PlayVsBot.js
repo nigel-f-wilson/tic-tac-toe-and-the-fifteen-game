@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flex: '1 0 50vh',
         justifyContent: 'center',
+        marginTop: "1rem"
     },
     panelArea: {
         color: theme.palette.common.white,

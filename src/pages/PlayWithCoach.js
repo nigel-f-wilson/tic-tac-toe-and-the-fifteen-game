@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flex: '0 0 50vh',
         justifyContent: 'center',
-        paddingTop: '0.5rem'
+        marginTop: "1rem"
     },
     panelArea: {
         color: theme.palette.common.white,
