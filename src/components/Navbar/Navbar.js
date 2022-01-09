@@ -36,34 +36,19 @@ const useStyles = makeStyles((theme) => ({
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'auto 95%',
     },
-    pageTitle: {
-        display: 'flex',
-        flex: '1 0 70%',
-        justifyContent: 'center',
-        alignItems: 'center',
-    }
 }));
 
 export default function Navbar(props) {
     const classes = useStyles();
     return (
-        <AppBar position='sticky' >
-            <Box className={classes.navbar} >
-                <Container maxWidth='md' disableGutters height='inherit' >
-                    <Box display='flex' justifyContent='center' >
-                        <Box className={classes.logo} />
-                        <Box className={classes.pageTitle} >
-                            <Typography align='center' variant='h4' noWrap >
-                                {props.pageTitle}
-                            </Typography>
-                        </Box>
-                        <Box display='flex' flexBasis='10%' justifyContent='flex-end' >
-                            <MobileMenu />
-                        </Box>
-                    </Box>
-
-                </Container>
-            </Box>
+        <AppBar position='sticky' className={classes.navbar}>
+            <Container maxWidth='sm' disableGutters height='inherit' >
+                <Box display='flex' justifyContent='space-between'  >
+                    <Box className={classes.logo} />
+                    <Typography align='center' variant='h3' noWrap children={props.pageTitle} style={{ paddingTop: "0.5rem" }} />
+                    <MobileMenu />
+                </Box>
+            </Container>
         </AppBar>
     )
 }
