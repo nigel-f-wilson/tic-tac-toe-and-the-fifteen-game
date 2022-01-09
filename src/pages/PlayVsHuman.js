@@ -28,16 +28,11 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
     },
-    navbarArea: {
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'row',
-        flex: '1 0 5vh',
-    },
     boardArea: {
         display: 'flex',
         flex: '1 0 50vh',
         justifyContent: 'center',
+        marginTop: "1rem"
     },
     panelArea: {
         color: theme.palette.common.white,
@@ -70,14 +65,9 @@ export default function PlayVsHuman(props) {
     
     return (
         <Box className={classes.root} >
-            <Box className={classes.navbarArea}>
-                <Navbar pageTitle={(props.game === "tic-tac-toe") ? "Tic Tac Toe vs. Human" : "15 Game vs. Human"} />
-            </Box>
+            <Navbar pageTitle={(props.game === "tic-tac-toe") ? "Tic Tac Toe vs. Human" : "15 Game vs. Human"} />
             
-            <Box className={classes.boardArea}>
-                {board}
-            </Box>
-
+            <Box className={classes.boardArea} children={board} />
             <Box className={classes.panelArea}>
                 <HumanPanel
                     game={props.game}
