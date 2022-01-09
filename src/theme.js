@@ -6,6 +6,11 @@ import {
 const white = "#FFF"
 
 const theme = createTheme({
+    breakpoints: {
+        values: {
+            sm: 760
+        },
+    },
     palette: {
         primary: {
             light: '#669944',
@@ -38,6 +43,7 @@ const theme = createTheme({
     },
     typography: {
         h4: {
+            paddingTop: "1rem",
             lineHeight: 1,
             fontSize: "2.125rem"
         },
@@ -48,13 +54,16 @@ const theme = createTheme({
         },
         h6: {
             lineHeight: 1,
-            fontSize: "1.6rem",
+            fontSize: "1.5rem",
             fontWeight: 400
 
         },
         body1: {
             color: white,
             lineHeight: 1.35
+        },
+        button: {
+            textTransform: "none"
         }
     },
     status: {
