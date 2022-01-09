@@ -264,7 +264,7 @@ function MenuList() {
                 />
             </ListItem>
 
-            <ListItem
+            {/* <ListItem
                 key={'learn_about_magic_squares'}
                 button
                 component={RouterLink}
@@ -279,7 +279,7 @@ function MenuList() {
                     primary={'Magic Squares'}
                     primaryTypographyProps={{ variant: 'h5' }}
                 />
-            </ListItem>
+            </ListItem> */}
 
 
         </React.Fragment>
