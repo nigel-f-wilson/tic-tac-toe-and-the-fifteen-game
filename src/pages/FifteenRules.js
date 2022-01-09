@@ -215,10 +215,10 @@ function TeachingTips() {
             </Typography>
 
             <Typography align='left' variant='h4' color='textPrimary' gutterBottom >
-                High School: Similarity Beneath the Surface
+                High School
             </Typography>
             <Typography align='left' variant='h6' color='textPrimary' gutterBottom >
-                Combinations and Permutations
+                Similarity Beneath the Surface
             </Typography>
             <Typography paragraph align='justify' component='p' variant='body1' gutterBottom >
                 Many problems can be solved with less work if, instead of starting from scratch, you look for similarities between the problem
