@@ -58,13 +58,13 @@ export default function App() {
                             <Route path="/fifteen_rules">
                                 <FifteenRules />
                             </Route>
-                            <Route path="/play_vs_human">
+                            <Route path="/tic_tac_toe_vs_human">
                                 <PlayVsHuman game={"tic-tac-toe"} />
                             </Route>
-                            <Route path="/play_vs_bot">
+                            <Route path="/tic_tac_toe_vs_bot">
                                 <PlayVsBot game={"tic-tac-toe"}  />
                             </Route>
-                            <Route path="/play_with_coach">
+                            <Route path="/tic_tac_toe_with_coach">
                                 <PlayWithCoach game={"tic-tac-toe"} />
                             </Route>    
                             <Route path="/fifteen_vs_human">
